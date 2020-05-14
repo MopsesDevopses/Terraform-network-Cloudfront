@@ -110,11 +110,13 @@ resource "aws_launch_configuration" "project" {
   iam_instance_profile = "${var.iam_name}"
   key_name             = "${var.key}"
 
+/*
   user_data = templatefile("./user_data/user_data_ecs.sh.tpl", {
     aws_ecs_cluster = "${var.cluster_name}"
 #    efs_id          = "${var.efs_id}"
 #    sg_ip           = aws_instance.storage-gateway-server.private_ip
   })
+*/
 
   lifecycle {
     create_before_destroy = true
