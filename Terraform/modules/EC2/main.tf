@@ -171,6 +171,7 @@ data "aws_ami" "latest_ami_for_bh" {
 }
 */
 
+/*
 resource "aws_launch_configuration" "project_bh" {
   name                 = "${var.project}-VPN"
   image_id             = "${var.ami_VPN}"
@@ -185,7 +186,9 @@ resource "aws_launch_configuration" "project_bh" {
   region = "${var.region}"
   })
 }
+*/
 
+/*
 resource "aws_autoscaling_group" "project_bh" {
   name                 = "ASG-VPN-${var.project}"
   max_size             = "1"
@@ -214,7 +217,8 @@ resource "aws_autoscaling_group" "project_bh" {
     },
   ]
 }
-
+*/
+	
 /*
 resource "aws_eip" "eip" {
   vpc   = true
@@ -226,6 +230,7 @@ resource "aws_eip" "eip" {
   }
 }
 */
+/*	
 resource "aws_security_group" "project_bh" {
   name   = "${var.project} VPN SG"
   vpc_id = "${var.vpc_id}"
@@ -252,6 +257,7 @@ resource "aws_security_group" "project_bh" {
     Project     = "${var.project}"
   }
 }
+*/
 
 #===== Storage gateway
 /*
