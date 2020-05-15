@@ -71,7 +71,7 @@ module "RDS" {
   rds_pswd_keeper         = "${var.rds_pswd_keeper}"
   backup_retention_period = "${var.backup_retention_period}"
   vpc_id                  = "${module.network.vpc_id}"
-  private_subnet_ids      = "${module.network.private_subnet_ids}"
+  public_subnet_ids      = "${module.network.public_subnet_ids}"
   db_allow_port           = "${var.db_allow_port}"
   env                     = "${var.env}"
   project                 = "${var.project}"
