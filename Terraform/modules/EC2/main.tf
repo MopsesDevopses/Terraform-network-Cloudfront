@@ -3,7 +3,8 @@ data "aws_ami" "latest_ami_for_ECS" {
   most_recent = true
   filter {
     name   = "name"
-    values = ["ubuntu/images/hvm-instance/ubuntu-bionic-18.04-amd64-server-*"]
+   # values = ["ubuntu/images/hvm-instance/ubuntu-bionic-18.04-amd64-server-*"]
+    values = ["amzn2-ami-ecs-hvm-2.0.*-x86_64-ebs"]
   }
 }
 
