@@ -31,7 +31,7 @@ resource "aws_autoscaling_group" "project" {
     },
     {
       key                 = "Name"
-      value               = "${var.project}-ECS-${var.env}"
+      value               = "${var.project}-${var.env}"
       propagate_at_launch = true
     },
   ]
