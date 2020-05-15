@@ -107,7 +107,7 @@ resource "aws_launch_configuration" "project" {
   image_id             = data.aws_ami.latest_ami_for_ECS.id
   instance_type        = "${var.type_instance}"
   security_groups      = ["${var.sg_id}"]
-  iam_instance_profile = "${var.iam_name}"
+ # iam_instance_profile = "${var.iam_name}"
   key_name             = "${var.key}"
 
 /*
