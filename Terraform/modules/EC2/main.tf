@@ -1,5 +1,5 @@
 data "aws_ami" "latest_ami_for_ECS" {
-  owners      = ["591542846629"]
+  owners      = ["099720109477"]
   most_recent = true
   filter {
     name   = "name"
