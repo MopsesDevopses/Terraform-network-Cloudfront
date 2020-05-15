@@ -74,7 +74,7 @@ tags = {
 }
 
 resource "aws_db_subnet_group" "project" {
-  name       = "db_subnet_group"
+  name       = "db_subnet_group_${var.project}"
   subnet_ids = "${var.private_subnet_ids}"
 
   tags = {
