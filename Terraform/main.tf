@@ -37,7 +37,6 @@ module "EC2" {
   vpc_id               = "${module.network.vpc_id}"
   public_subnet_ids    = "${module.network.public_subnet_ids}"
   private_subnet_ids   = "${module.network.private_subnet_ids}"
-  iam_name             = "${module.IAM_for_EC2.iam_name}"
   iam_bastion_name     = "${module.IAM_for_EC2.iam_bastion_name}"
 #  cluster_name         = "${module.ECS.cluster_name}"
 #  efs_id               = "${module.network.efs_id}"
